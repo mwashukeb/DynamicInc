@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*LAYOUT FOR SMALL SCREENS*/
+.promo_a { width: 100%; float: none;}
+.small { float: none; width: 100%;}
+.large { float: none;	width: 100%;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+
+/*HEADER + FOOTER*/
+header { height: 70px;}
+span.phone {float: left; margin-top: 5px; margin-left: 8px;}
+footer {height: 50px;}
+	
+/*NAV*/
+nav a {
+	text-align: left;
+	display: block;
+	margin: 4px;
+	padding: 8px;
+	border: 1px solid #a6abc5;
+	background: url(../images/mobile_link_arrow.png) no-repeat right center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+/*WELCOME*/
+section.welcome { height: 180px;}
+section.welcome { background: url(../images/logo_small.jpg) no-repeat center 50px;}
+
+/*SERVICES*/
+.promo_img {
+background: url(../images/img.jpg) no-repeat;
+width: 280px;
+height: 400px;
+}
+section.services .large {padding-top: 20px;}
+
+/*SLIDER*/
+section.slider h1 {
+	font-size: 1.4em;
+	padding-left: 40px;
+}
+@media only screen and (min-width:451px) and (max-width:500px) {
+	section.slider h1 {
+		padding-left: 40px;
+	}
+	#slide_front, #slide_back, #left, #right {
+		top: -20px;
+	}	
+	#slide_front, #slide_back {
+		transform: scale(.6,.6);
+		left: -55px;
+	}
+	#left, #right {
+		height: 60px;
+		width: 60px;
+		transform: scale(.5, .5);
+	}
+	#jumpers {
+		margin-top: 20px;
+	}
+}
+@media only screen and (min-width:401px) and (max-width:450px) {
+	section.slider h1 {
+		padding-left: 40px;
+	}
+	#slide_front, #slide_back, #left, #right {
+		top: -30px;
+	} 
+	#slide_front, #slide_back {
+		transform: scale(.52,.52);
+		left: -76px;
+	}
+	#left, #right {
+		height: 60px;
+		width: 60px;
+		transform: scale(.5, .5);
+	}
+	#jumpers {
+		margin-top: 20px;
+	}
+}
+@media only screen and (min-width:50px) and (max-width:400px) {
+	section.slider h1 {
+		padding-left: 0;
+	}
+	#slide_front, #slide_back, #left, #right {
+		top: -50px;
+	}	 
+	#slide_front, #slide_back {
+		transform: scale(.4,.4);
+		left: -110px;
+	}
+	#left, #right {
+		height: 60px;
+		width: 60px;
+		transform: scale(.4, .4);
+	}
+	#jumpers {
+		margin-top: -40px;
+	}
+}
+/*OUR CLIENTS*/
+.client_one {
+	background: url(../images/client_1.jpg) no-repeat 0 0;
+	width: 280px;
+	height: 450px;
+}
+.client_two, .client_three, .client_four {
+	width: 40%;
+	height: 150px;
+	float: left;
+}
+.client_two {	background: url(../images/client_dubai.jpg) no-repeat 0 0;}
+.client_three {	background: url(../images/client_unilever.jpg) no-repeat 0 0;}
+.client_four {	background: url(../images/client_unya.jpg) no-repeat 0 0;}
+
+/*CONTACT*/
+.logo { background: url(../images/logo_small.jpg) no-repeat 0 0; width: 280px; height: 180px;}
+@media only screen and (min-width:401px) {
+	header, footer {height: auto;}
+	footer span.right, span.phone {float: right;}
+	span.phone {font-size: 1em; margin-left: none;}
+	.client_two, .client_three, .client_four {
+	width: 40%;
+	height: 150px;
+	float: left;
+	}
+}
+@media only screen and (max-width:340px) {
+	footer span.right {float:left; margin-left: 6px;}	
+}

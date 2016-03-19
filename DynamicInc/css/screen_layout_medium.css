@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*LAYOUT FOR MEDIUM SCREENS*/
+.promo_a { width: 50%; float: left;}
+/*NAV*/
+nav { 
+	width: 100%;
+	text-align: center;
+	display: block;
+	padding: 15px 0 15px 0;
+}
+nav a {
+display: inline-block;
+font-weight: bold;
+padding: 0 20px 0 20px;
+}
+
+/*WELCOME*/
+section.welcome { height: 340px;}
+section.welcome { background: url(../images/logo.jpg) no-repeat center 50px;}
+
+/*OUR SERVICES*/
+.promo_img {
+	background: url(../images/img.jpg) no-repeat;
+	width: 300px;
+	height: 400px;
+}
+.promo { float: left; width: 50%; height: 180px;}
+
+/*SLIDER*/
+section.slider h1 {
+	margin-bottom: 0;
+}
+@media only screen and (min-width:700px) {
+	#slide_front, #slide_back {
+		transform: scale(.92,.92);
+		left: 28px;
+	}
+	#slide_front, #slide_back {
+		left: 80px;
+	}
+	#left, #right {
+		height: 60px;
+		width: 60px;
+		transform: scale(.8, .8);
+	}
+	#jumpers {
+		margin-top: 180px;
+	}
+}
+@media only screen and (min-width:600px) and (max-width:699px) {
+	#slide_front, #slide_back, #left, #right {
+		bottom: 15px;
+	}
+	#slide_front, #slide_back {
+		transform: scale(.8,.8);
+		left: 20px;
+	}
+	#left, #right {
+		height: 60px;
+		width: 60px;
+		transform: scale(.7, .7);
+	}
+	#jumpers {
+		margin-top: 130px;
+	}
+}
+@media only screen and (min-width:501px) and (max-width:599px) {
+	section.slider h1 {
+		padding-left: 40px;
+	}
+	#slide_front, #slide_back, #left, #right {
+		top: -20px;
+	}
+	#slide_front, #slide_back {
+		transform: scale(.65,.65);
+		left: -30px;
+	}
+	#left, #right {
+		height: 60px;
+		width: 60px;
+		transform: scale(.6, .6);
+	}
+	#jumpers {
+		margin-top: 70px;
+	}
+}
+/*OUR CLIENTS*/
+.client_one {
+	background: url(../images/client_1.jpg) no-repeat 0 0;
+	width: 300px;
+	height: 450px;
+}
+.client_two, .client_three, .client_four {
+	width: 100%;
+	height: 150px;
+	float: left;
+}
+.client_two {	background: url(../images/client_dubai.jpg) no-repeat right 0;}
+.client_three {	background: url(../images/client_unilever.jpg) no-repeat right 0;}
+.client_four {	background: url(../images/client_unya.jpg) no-repeat right 0;}
+
+/*CONTACT*/
+.logo { background: url(../images/logo_small.jpg) no-repeat 0 0; width: 250px; height: 180px;}
+@media only screen and (max-width:720px) {
+	section.services .promo {float:right; width: 80%;}
+}
+@media only screen and (max-width: 669px) {
+	nav a {
+		text-align: left;
+		display: block;
+		margin: 4px;
+		padding: 8px;
+		border: 1px solid #a6abc5;
+		background: url(../images/mobile_link_arrow.png) no-repeat right center;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+}
+@media only screen and (max-width:580px) {
+	section.services .large, section.services .small {float:none; width: 100%}
+	section.services .promo {float: left; width: 50%;}
+}
